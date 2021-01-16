@@ -22,29 +22,20 @@ Go may appear like an OOP langauge but it is not. It doesn't not have type heria
 
 When go compiles and intalls tools, it puths them in the $GOPATH/bin directory. Having a structure like this allows the project to be able to work with the `go get` tool.
 
-A go workspace is a directory with `/bin` and `/src` at it's root.
+A `go` workspace is a directory with `/bin` and `/src` at it's root. Most developers will keep all their code and dependencies in a single workspace.
 
-The `go` trool builds and installs binaries to the `bin` directory.
+The `go` tool builds and installs binaries to the `bin` directory.
 
 Structure:
 ```
-# $HOME = /home/tmiguel
+# $HOME=/home/tmiguel
+# export GOPATH=$HOME/go
+# export PATH=$PATH:$GOPATH/bin   
 $HOME/go                                <- go directory, root workspace
 $HOME/go/bin                            <- go binaries, executables, tools
 $HOME/go/src                            <- go source code files
-$HOME/go/src/github.com                 <- canocial packages
-$HOME/go/src/github.com/tmiguel/golearn <- project directory
-```
-
-```
-export GOPATH=$HOME/go         
-export PATH=$PATH:$GOPATH/bin
-```
-
-```
-/$GOPATH
-|- src    <- go source files
-|- bin    <- executables built and installed by Go tools
+$HOME/go/src/github.com                 <- canonical packages
+$HOME/go/src/github.com/tmiguel/golearn <- git project directory
 ```
 
 The `src` subdirectory will contain the version control repositories such as `github.com`. When you import libs, you will see this prefix which allows for canonical (reference fully qualified package) imports of code.
@@ -61,5 +52,5 @@ go run hello_world.go
 
 ## Resources
 
-Wikipedia: https://en.wikipedia.org/wiki/Go_(programming_language)
-Golang.org: https://golang.org/
+- Wikipedia: https://en.wikipedia.org/wiki/Go_(programming_language)
+- Golang.org: https://golang.org/
