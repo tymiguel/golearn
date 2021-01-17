@@ -56,5 +56,6 @@ go run hello_world.go
 ```
 ## Resources
 
-- Wikipedia: https://en.wikipedia.org/wiki/Go_(programming_language)
+- Go Wikipedia: https://en.wikipedia.org/wiki/Go_(programming_language)
 - Golang.org: https://golang.org/
+- Tour of go: https://tour.golang.org/list
