@@ -61,3 +61,4 @@ go run hello_world.go
 - Go dev: https://go.dev/
 - Tour of go: https://tour.golang.org/list
 - Go by example: https://gobyexample.com/
+- Example tutorial: https://www.toptal.com/go/go-programming-a-step-by-step-introductory-tutorial
