@@ -42,6 +42,11 @@ The `src` subdirectory will contain the version control repositories such as `gi
 
 Canonical import paths make it resilient to repo changes.
 
+### Other important directory notes
+
+`go build`  <- compile code to executable that will be named after the project which allows to be run from command line
+`go install` <- creates executable and puts it in the `bin` folder; if there are dependencies, will cache them and put them in `pkg` folder
+
 ## Running go
 
 Using the command from the CLI, use:
@@ -49,7 +54,6 @@ Using the command from the CLI, use:
 ```
 go run hello_world.go
 ```
-
 ## Resources
 
 - Wikipedia: https://en.wikipedia.org/wiki/Go_(programming_language)
