@@ -9,6 +9,9 @@ import (
 	"math"
 )
 
+// create a constant
+const Greeting string = "Hello!"
+
 func mymath() {
 	fmt.Println("We are going to do some math!")
 	// declare the variable var and name x as a data type int and assign the value 5
@@ -163,6 +166,9 @@ func pointers() {
 // create a function
 func main() {
 	fmt.Println("Hello, world!")
+
+	// uses a constant Hello!
+	fmt.Println(Greeting, "I'm using a constant.")
 
 	// calls the function math()
 	mymath()
